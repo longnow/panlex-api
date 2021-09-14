@@ -1,0 +1,30 @@
+{
+  "cache": true,
+  "cluster": true,
+  "db": {
+    "client": "pg",
+    "connection": {
+      "host": "localhost",
+      "user": "user",
+      "password": "blah",
+      "database": "plx"
+    },
+    "pool": { "min": 2, "max": 10 }
+  },
+  "docUrl": "https://dev.panlex.org/api/",
+  "fakeExpr": "http://localhost:3004",
+  "graph": "http://localhost:3500",
+  "limit": {
+    "arrayMax": 10000,
+    "offsetMax": 250000,
+    "responseMax": 2000
+  },
+  "log": "/opt/nodejs/api/log/api.log",
+  "logRequestBodyMax": 512,
+  "port": 3001,
+  "requestTimeout": 600,
+  "throttle": {
+    "ratePerMinute": 120,
+    "unlimited": []
+  }
+}
